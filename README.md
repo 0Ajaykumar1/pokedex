@@ -1,6 +1,8 @@
 # Getting Started
 
-Clone the repository by using following command ###`git clone`
+Clone the repository by using following command
+
+###`git clone https://github.com/0Ajaykumar1/pokedex.git`
 
 ## To run the application in local
 
