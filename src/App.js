@@ -1,25 +1,24 @@
-import logo from './logo.svg';
+import axios from 'axios';
 import './App.css';
+import { Outlet, Link } from "react-router-dom";
 
-function App() {
-  return (
+
+function App(props) {
+  return (<>
+
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='nav-wrapper'>
+        <nav>
+          <div className='menu-wrapper'>
+            <Link to="/" className='menu-link'>Pokedex</Link>
+          </div>
+        </nav>
+      </div>
+      <Outlet />
     </div>
+  </>
   );
 }
+
 
 export default App;
